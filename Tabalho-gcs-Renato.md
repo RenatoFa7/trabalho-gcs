@@ -5,66 +5,104 @@ Plano de Gerenciamento de Configuração
 Versão &lt;1.0&gt;
 ------------------
 
-_[Observação: O template a seguir é fornecido para uso com o Rational Unified Process (RUP).  O texto exibido entre colchetes e em itálico foi incluído para orientar o autor e deve ser excluído antes da publicação do documento._
-
-_Este documento utiliza a formatação da linguagem [Markdown] (http://daringfireball.net/projects/markdown/). Você pode encontrar um guia de referência rápido [aqui] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).]_
-
 Histórico de Versões
 --------------------
 
 |Data                |Versão       |Descrição               |Autor          |
 |--------------------|-------------|------------------------|---------------|
-|_&lt;dd/mm/aaaa&gt;_|_&lt;1.0&gt;_|_&lt;Versão inicial&gt;_|_&lt;autor&gt;_|
-|_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
+|_&lt;03/12/2013&gt;_|_&lt;1.0&gt;_|_&lt;Versão inicial&gt;_|_&lt;Renato&gt;_|
+|_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Criação do controle de mudanças&gt;_  |_&lt;DOmingos Neto&gt;_|
 
 
 
 1. Introdução
 ==============
 
-_[A introdução do Plano de Gerenciamento de Configuração  oferece uma visão geral de todo o documento. 
-Ela inclui a finalidade, o escopo, as definições, os acrônimos, as abreviações, as referências e uma visão geral deste
-Plano de Gerenciamento de Configuração.]_
+   O AGESC é um sistema de gestão de materiais. Com a utilização da metodologia workflow e configuração dos setores de consumo e armazenamento dos produtos, é possível garantir a rastreabilidade de cada item em toda a 
+sua movimentação. Através dos parâmetros de consumo, tempo de entrega e efetivação e do processo de compras, é possível planejar as aquisições de forma mais assertiva, reduzindo os custos operacionais e de Aquisição.
+
 
 1.1 Finalidade
 ---------------
-_[Especifique a finalidade deste Plano de Gerenciamento de Configuração.]_
+Fazer com que o hospital possa ter controle das movimentações dos diversos tipos ,Solicitação de compras, Autorização de entrega, Autorização de recebimento Conferência , Estocagem, Autorização de abastecimento,Expedição e transporte,  Dispensação, Inventário ,Interação medicamentosa, emissões de relatórios, Receita Avulsa.
+
 
 1.2 Escopo
 ----------
-_[Uma breve descrição do escopo deste Plano de Gerenciamento de Configuração; o modelo ao qual ele está associado e tudo o que é afetado ou influenciado por este documento.]_
+Este Plano de Gerenciamento de Configuração é destinado para todos os integrantes da equipe responsável pelo desenvolvimento do sistema AGESC na disciplina de Gestão de Configuração de Software, e abrange todo o controle e gerenciamento da configuração do projeto AGESC  – Sistema de Gestão de Materiais Hospitalar. 
 
 1.3 Definições, Acrônimos e Abreviações
 ---------------------------------------
-_[Esta subseção apresenta as definições de todos os termos, acrônimos e abreviações necessários para a correta interpretação do Plano de Gerenciamento de Configuração.  Essas informações podem ser fornecidas mediante referência ao Glossário do projeto.]_
 
+|Termo               |Significado                          
+|--------------------|-------------|
+|   SCRUM            |É um processo ágil que permite manter o foco na entrega do maior valor de negócio, no menor tempo possível.|
+|GC|Gerência de Configuração|
+|Baseline  |  Conjunto de itens de configuração que conseguiram um estado comprovado de estabilidade.                      |
+|CM  |Controle de Mudanças.                        |
+|Artefatos  |São documentos, componentes de software (inclusive código-fonte) e qualquer informação necessária para a execução de uma atividade ou produzida por esta dentro de um processo de software.                        |
+|Realeses |É uma versão de um sistema que é distribuída para o consumidor. Porém, um release não se restringe apenas ao código-fonte de um sistema, pode ser um arquivo de configuração, arquivos de dados, manual do usuário, instalador do programa dentre outros (SOMMERVILLE, 2006);     | 
 1.4 Referências
 ---------------
-_[Esta subseção apresenta uma lista completa de todos os documentos mencionados no Plano de Gerenciamento de Configuração. Identifique os documentos por título, número de relatório (se aplicável), data e organização responsável pela publicação. Especifique as fontes a partir das quais as referências podem ser obtidas. Essas informações podem ser fornecidas por um anexo ou outro documento.]_
+   Template de Plano de Gerenciamento de Configuração.
+ Plano de Gerenciamento de Configuração  do Projeto - Agesc - Sistema de Gestão de Materiais Hospitalar, Versão 1.0.
+Cronograma - Agesc - Sistema de Gestão de Materiais Hospitalar.
 
 1.5 Visão Geral
 ---------------
-_[Esta subseção descreve o conteúdo restante do Plano de Gerenciamento de Configuração e explica como o documento está organizado.]_
-
+|Sessão               |Descrição                          
+|--------------------|-------------|
+|2|São relacionados os papéis, as responsabilidades das atividades e as ferramentas dentro da GC.                |
+|3|É apresentado como serão criadas e controladas as Baselines.|
+|4|São abordados os detalhes sobre quando o Plano de Gerenciamento de Configuração deve ser atualizado.|
+|5|Descreve as ferramentas de software, o pessoal e o treinamento necessários para implementar as atividades de CM especificadas.|
+|6|Descreve de que forma o software desenvolvido fora do ambiente do projeto será incorporado.|
 
 
 2. Gerenciamento de Configuração de Software
 ============================================
 
 2.1 Organização, Responsabilidades e Interfaces
-------------------------------------------------
-_[Descreva quem será o responsável pela execução das diversas atividades de Gerenciamento de Configuração (CM) descritas no Processo de CM.]_
+---------------------------------------------
+|Papéis              |Responsável  | Responsabilidade                      
+|--------------------|-------------|---------------|
+|Gerente de Configuração|Antonio Renato|Estabelecer Políticas de GC Escrever Plano de GC Configurar Ambiente de GC Criar Espaços de Trabalho de Integração Criar Baselines Promover Baselines
+|CM|Domingos Neto|Estabelecer Processo de Controle de Mudanças Revisar Solicitação de Mudança
+|Desenvolvedor|Antonio Renato Domingos Neto|Seguir os padrões e procedimentos definidos no Plano de Gerência de Configuração
+|Todos os Papéis|Antonio Renato Domingos Neto|Enviar Solicitação de Mudança Atualizar Solicitação de Mudança
+
 
 2.2 Ferramentas, Ambiente e Infra-estrutura
--------------------------------------------
-_[Descreva o ambiente de computação e as ferramentas de software a serem utilizadas para desempenhar as funções de CM em todo o ciclo de vida do projeto ou produto._
-_Descreva as ferramentas e os procedimentos necessários utilizados para o controle de versão dos itens de configuração gerados no ciclo de vida do projeto ou produto._
-_As questões envolvidas na configuração do ambiente de CM incluem:_
-* _tamanho previsto dos dados do produto_
-* _distribuição da equipe do produto_
-* _localização física dos servidores e clientes]_
- 
+-------------------------------------------------
+|Ferramenta          |Tipo         | Descrição     | Versão                     
+|--------------------|-------------|---------------|---------
+|Google Code||É um projeto de hospedagem de desenvolvimento de softwares criado pelo Google que fornece sistema de controle de versão usando Subversion. Localizado através do Endereço: “https://code.google.com/p/agesc/”|
+|Subversion|Controle de Versão.|Sistema de controle de versão.|1.4.6
+|TortoiseSVN|Acesso ao repositório|Cliente para o Subversion integrado ao Windows. |1.4.8.121
+--
 
+|Tipo              |Ferramenta  | Versão                      
+|--------------------|-------------|---------------|
+|Sistema Operacional (Desenvolvimento)|Windows 7|2009
+|Cronograma|Microsoft Office Project|2013
+|Antvírus|Avira|2013
+|Controle de Versão|Subversion|1.7
+|Plataforma de Desenvolvimento|Ferramenta: Delphi.|2013
+|Banco de Dados|Oracle|11 G
+|Relatórios|Fast Report|4.0
+--
+|Ambiente            | Descrição  | Transição                      
+|--------------------|-------------|---------------|
+|Desenvolvimento|É o ambiente que servirá para o desenvolvimento do Sistema.|O componente atingirá a maturidade quando os requisitos forem supridos e testados pelos desenvolvedores através dos testes unitários.
+|Integração|É o ambiente que servirá para os testes de integração.|Quando a comunicação entre os módulos atinge o um estagio satisfatório de funcionamento, ou seja, não deverão existir erros de integração entre os subsistemas.
+|Banco de Dados|É o ambiente onde conterá o Banco de dados.|Ambiente que conterá o Banco de dados do sistema.  
+--
+|Qtd          |Ambientes         | Configuração Hardware|Configuração Hardware                     
+|--------------------|-------------|---------------|---------
+|3|Desenvolvedor|Processador: Core I3 Memória RAM: 4 GB Hard Disk: 360 GB IP 192.168.0.2 |Windows 7 Professional ,Delphi XE 2013,GIT, TortoiseSVN,Office 2007 ,Cliente Oracle  11 G,Fast Report 4.0,Avira 2013'
+|1|Integração|Processador: Core I3 Memória RAM: 4 GB Hard Disk:  360 GB IP 192.168.0.2|Windows 7 Professional ,Delphi XE 2013,GIT, TortoiseSVN,Office 2007 ,Cliente Oracle  11 G,Fast Report 4.0,Avira 2013'
+|1|Banco de Dados|Processador: Core I3 Memória RAM: 4 RAM Hard Disk:  360 GB IP 192.168.0.2|Windows 7 Professional ,Delphi XE 2013
+ 
 
 3. O Programa de Gerenciamento de Configuração
 ==============================================
@@ -72,17 +110,47 @@ _As questões envolvidas na configuração do ambiente de CM incluem:_
 3.1 Identificação da Configuração
 ---------------------------------
 ### 3.1.1 Métodos de Identificação
-----------------------------------
-_[Descreva como os artefatos do projeto ou produto devem ser nomeados, marcados e numerados. O esquema de identificação deve abranger o hardware, o software do sistema, os produtos de terceiros (COTS) e todos os artefatos de desenvolvimento de aplicativos listados na estrutura de diretórios do produto; por exemplo, planos, modelos, componentes, software de teste, resultados e dados, executáveis e assim por diante.]_
+--
+|Sessão               |Descrição                          
+|--------------------|-------------|
+|TAB|Termo de Abertura|
+|PPR|Plano de Projeto|
+|CRN|Cronograma|
+|MTD|Metodologia|
+|RAT|Relatório de Status|
+|ARN|Atas de Reuniões|
+|DVS|Documento de Visão|
+|ECU|Especificação de Caso de Uso|
+|MCU|Modelo de Caso de Uso|
+|GLS|Glossário|
+|MIM|Manual de Implantação|
+|ARQ|Documento de Arquitetura|
+|MAP|Modelo de Análise e Projetos|
+|PBD|Modelo de Banco de Dados|
+|MIN|Manual de Instalação (implantação)|
+|PLT|Plano de Testes|
+|PRT|Projeto de Testes|
+|PET|Planilha de Execução de Testes|
+|PGC|Plano de Gerência de Configuração|
+|NRT|Notas de Release|
+|RSM|Registro das Solicitações de Mudanças|
+|RIP|Relatório Individual de atuação no Projeto|
+|PPT|Apresentação PowerPoint do Projeto|
+|FRM|Artefatos (Código fonte) camada onde ficam as telas do sistema.|
+|RPT|Artefatos (Código fonte) camada onde ficam os relatórios gerados pelo sistema|
+|BLD|Builds do sistema|
+|RLS|Reliases do Sistema|
+
 
 ### 3.1.2 Itens de Configuração
-_[Relacionar os artefatos ou grupos de artefatos, separando por tipo, modulo ou subsistema, responsável ou momento em que deverão ser incluídos em baselines._
-* _“Inclusão em Baseline” em branco significa que o grupo de artefatos não participará de baseline. Pode ser expresso como uma data ou identificador de uma baseline, fase ou ponto de controle_
-* _“Responsável”: indicar nominalmente, sempre que possível]_
 
-| Item (ou Tipo de Item)                 | Responsável na equipe	     | Inclusão em Baseline |
+
+ Item (ou Tipo de Item)  | Responsável na equipe| Inclusão em Baseline |
 |----------------------------------------|-----------------------------|----------------------|
-|_&lt;grupo de itens de configuração&gt;_|_&lt;nome do responsável&gt;_|_&lt;momento a partir do qual o conjunto de artefatos será incluído em baseline&gt;_|
+|Gerente de Configuração|Renato|Estabelecer Políticas de GC Escrever Plano de GC Configurar Ambiente de GC Criar Espaços de Trabalho de Integração Criar Baselines Promover Baselines
+|CM|Domingos Neto|Estabelecer Processo de Controle de Mudanças Revisar Solicitação de Mudança
+| Todos os Papéis| Antonio Renato Domingos Neto |Enviar Solicitação de Mudança Atualizar Solicitação de Mudança
+
 
 
 ### 3.1.3 Baselines do Projeto

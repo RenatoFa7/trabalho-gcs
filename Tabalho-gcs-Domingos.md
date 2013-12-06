@@ -11,7 +11,7 @@ Histórico de Versões
 |Data                |Versão       |Descrição               |Autor          |
 |--------------------|-------------|------------------------|---------------|
 |_&lt;03/12/2013&gt;_|_&lt;1.0&gt;_|_&lt;Versão inicial&gt;_|_&lt;Renato&gt;_|
-|_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Criação do controle de mudanças&gt;_  |_&lt;DOmingos Neto&gt;_|
+|_&lt;30/11/2013&gt;_|_&lt;1.1&gt;_|_&lt;Criação do controle de mudanças&gt;_  |_&lt;Domingos Neto&gt;_|
 
 
 
@@ -155,36 +155,131 @@ Cronograma - Agesc - Sistema de Gestão de Materiais Hospitalar.
 
 ### 3.1.3 Baselines do Projeto
 
-_[As baselines funcionam como um padrão oficial no qual os trabalhos subseqüentes são baseados. Somente mudanças autorizadas podem ser efetuadas nas baselines._
-_Descreva em que pontos do ciclo de vida do projeto ou produto as baselines devem ser estabelecidas. As baselines mais comuns devem ser definidas ao final de cada uma das fases de Iniciação, Elaboração, Construção e Transição. Elas também podem ser geradas no final de iterações ocorridas dentro das várias fases ou com freqüência ainda maior._
-_Descreva quem autoriza uma baseline e o que ela contém.]_
+As baselines serão definidas em três fases.
+
+|Fases               |Itens de Configuração da Baseline                          
+|--------------------|-------------|
+|Planejamento|Documentação (Artefatos do projeto)|
+|Arquitetura o projeto|Código fonte contendo apenas a arquitetura do Projeto ,Camadas Garantia transacional|
+|Release|Fontes do sistema pronto|
+
 
 ### 3.1.4 Estrutura do Repositório de Versões
-_[Descreva a organização de diretórios do seu repositório e que itens/arquivos devem ser armazenados em cada diretório.]_
+|Diretório| SubDiretório |Artefatos
+|---------|--------------|---------
+|Documentos|Gerência de Confifuração|Modelo do Plano de Gerenciamento de configuração, Notas de Releases e Arquivo de aprovação dos documentos
+           | Gerência de Projetos| Documento de Visão, Termo de Abertura, Plano de Projeto, Cronograma, Relatório de Status, Atas de reuniões e Arquivos de aprovação dos documentos
+           | Requisitos| Especificação de Caso de Uso, Modelo de Caso de Uso, Glossário e Arquivos de aprovação dos documentos.
+           | Análise e Projeto|  Manual de Implantação, Documento de Arquitetura, Modelo de Banco de Dados, Modelo de Análise e Projetos e Arquivos de aprovação dos documentos
+ 
+
 
 3.2 Controle de Configuração e Mudança
 --------------------------------------
-
 ### 3.2.1 Processamento e Aprovação de Solicitações de Mudança
-_[Descreva o processo pelo qual os problemas e as mudanças são submetidos, revisados e dispostos. Inclua como funciona a transição de estados de uma solicitação de mudança]_
+As solicitações de mudanças das Baselines serão realizadas através da ferramenta Issues disponibilizada pela Google através do endereço do repositório na qual terá o seguinte fluxo.
+
+**Status dos Issues**
+
+|Atividade| Descrição |Artefatos
+|---------|--------------|---------
+|Aberto| Criação da solicitação| Todos
+|Em Analise| Analise da solicitação| Analista de sistemas 
+|Analisado |Aguardando desenvolvimento | Analista de sistemas
+|Em desenvolvimento |Solicitação sendo desenvolvida | Desenvolvedor
+|Desenvolvido |Aguardando teste | Desenvolvedor
+|Em testes |Solicitação em teste| Testador
+|Testado com erro |Aguardando desenvolvimento | Testador
+|Testado sem erro |Solicitação esperando finalização pelo analista |Testador 
+|Finalizado |Solicitação finalizada |Analista
 
 ### 3.2.2 Comitê de Controle de Mudança (CCB)
-_[Descreva a participação e os procedimentos para processar solicitações e aprovações de mudança a serem seguidos pelo CCB. Informe quem são os membros do CCB e suas responsabilidades.]_
-
+O comitê de Controle de Mudanças (CCM) será formado por Analista de sistemas e Gerente de Projetos
 
 
 4. Padrões e Procedimentos
 ==========================
-_[Descreva os padrões e procedimentos que devem ser seguidos no projeto. Crie subseções se achar necessário, para organizá-los melhor.]_
+N/A
 
 
 
 5. Treinamento e Recursos
 =========================
-_[Descreva as ferramentas de software, o pessoal e o treinamento necessários para implementar as atividades de CM especificadas.]_
+Descrição dos treinamentos efetuados para os integrantes do Grupo.
 
+|Treinamento |Objetivo |Público Alvo
+|---------|--------------|---------
+|Repositório| Treinamento ensina como acessar o repositório através de uma máquina cliente, como dar os comandos principais do repositório,  como incluir novos itens dentro do repositório e também como remover do mesmo.| Toda a equipe
 
 
 6. Auditorias de Configuração
 =============================
-_[Descreva o cronograma das auditorias de configuração e o que será verificado. Informe também como serão reportados os problemas encontrados e onde sera feito o acompanhamento dos itens corretivos.]_
+|Objetivos |Avaliar como se encontra a baseline em termos físicos e funcionais
+|---------| ---------------|
+Procedimentos| 1.	Identificar a baseline a ser auditada; 2.	Confirmar que todos os itens de configuração presentes na baseline foram previstos no Plano de Gerência de Configuração; 3.	Preparar um checklist para auditoria física avaliando a estrutura da baseline bem como a identificação unívoca dos itens de configuração.; 4.	Preparar um checklist para auditoria funcional avaliando se o item de configuração exerce sua funcionalidade segundo seu propósito.; 5.	Realizar a auditoria da Baseline.; 6.	Gerar um relatório listando as não-conformidades encontradas.
+
+
+|Entrada| Critérios
+|------|----------|
+|      |Existe uma baseline estabelecida.|
+
+ 
+|Entrada| Insumos
+|------|----------|
+|      |•	Baseline; •	Relatório de Estabelecimento de Baseline |
+
+|Saidas| Critérios
+|------|----------|
+|      | •	Uma auditoria de baseline foi realizada
+
+|Saidas| Produtos|
+|------|----------|
+|      |•	Checklist de auditoria da configuração funcional; •	Checklist de auditoria da configuração física; •	Relatório de não-conformidades da auditoria da configuração 
+
+|Participantes |Responsável pela Execução |
+|------|----------|
+|      |•	Gerente de Configuração 
+
+|Participantes |Responsável pela Aprovação | 
+|------|----------|
+|      |•	Domingos Neto.
+
+|Participantes |Consultados |
+|------|----------|
+|      |•	Gerênte de Projeto
+> 
+**3 - Acompanhar Configuração**
+
+|Objetivos |Acompanhar o estado de mudanças em baselines e de ações corretivas para problemas identificados. |
+|------|----------|
+|**Procedimentos**|1.	Avaliar situação de Planos de Mudança em Baseline que estão em andamento. Deve ser registrada a situação em que se encontra a implementação da mudança, se houver.; 2.	Avaliar o estado das ações corretivas das não-conformidades identificadas em audições para o estabelecimento de baseline ou em acompanhamentos das configurações anteriores. Deve ser registrado a situação em que se encontram as ações corretivas, se de fato houve problemas identificados.; 3.	Verificar se todas as baselines planejadas estão sendo criadas.; 4.	Verificar se os mecanismos de acesso, check-in e check-out estão sendo executados.|
+
+|Entrada |Critérios |
+|------|------------|
+|      |•	Existe uma baseline estabelecida.; •	Houve uma auditoria de configuração na baseline estabelecida|
+
+|Entrada |Insumos   |
+|------|------------|
+|      |•	Relatório de não-conformidades da auditoria da configuração.;•	Relatório de Acompanhamento da Configuração anterior.;•	Solicitação de mudança em baseline•	Plano de mudança em baseline | 
+
+|Saida |Critérios |
+|------|------------|
+|      | •	Uma auditoria de baseline foi realizada. | 
+
+|Saida |Produtos    |
+|------|------------|
+|      | •	Relatório de Acompanhamento da Configuração. | 
+
+
+|Participantes |Responsável pela Execução |
+|------|------------|
+|      |•	Gerente de Configuração       | 
+
+|Participantes |Responsável pela Aprovação |
+|------|------------|
+|      |•	Domingos Neto. |
+
+|Participantes |Consultados |
+|------|------------|
+|      |•	Gerênte de Projeto, •	Administrador de Redes ou Responsável pela Infra-Estrutura|
+

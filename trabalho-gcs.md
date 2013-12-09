@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-testeee
-=======
 <Nome do Projeto>
 =================
 Plano de Gerenciamento de Configuração
@@ -286,4 +283,3 @@ Procedimentos| 1.	Identificar a baseline a ser auditada; 2.	Confirmar que todos 
 |------|------------|
 |      |•	Gerênte de Projeto, •	Administrador de Redes ou Responsável pela Infra-Estrutura|
 
->>>>>>> trabalho-Domingos
